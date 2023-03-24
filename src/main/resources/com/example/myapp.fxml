@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.MyAppController">
-   <center>
-      <Label fx:id="label" text="Label" BorderPane.alignment="CENTER" />
-   </center>
-   <bottom>
-      <Button fx:id="button" mnemonicParsing="false" onAction="#buttonOnAction" text="OK" BorderPane.alignment="CENTER">
-         <BorderPane.margin>
-            <Insets bottom="20.0" />
-         </BorderPane.margin>
-      </Button>
-   </bottom>
-</BorderPane>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="113.0" prefWidth="170.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.MyAppController">
+   <children>
+      <TextField fx:id="heightField" promptText="身長" />
+      <TextField fx:id="weightField" promptText="体重" />
+      <Button fx:id="calcButton" mnemonicParsing="false" text="計算" />
+      <Label fx:id="resultLabel" text="結果" />
+   </children>
+</VBox>
